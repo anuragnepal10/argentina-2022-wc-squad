@@ -1,0 +1,207 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Utility */
+
+html{
+    scroll-behavior: smooth;
+    scroll-margin-top: 10rem;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #001324;
+    background-image: linear-gradient(to left,#00325e,#001324);
+    color: white;
+    min-height: 100vh;
+}
+
+/* Header */
+
+header{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding-inline: 2%;
+}
+
+.heading{
+    display: none;
+    display: flex;
+    align-items: center;
+}
+
+.heading img{
+    height: 3rem;
+    width: auto;
+    margin: 1rem;
+}
+
+.heading .text h1{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.heading .text h2{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none
+}
+nav ul li{
+    margin-inline: 1rem;
+}
+
+nav ul li a,nav ul li a:visited{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+nav ul li a:hover,nav ul li a:focus{
+    text-decoration: none;
+    color: #FCBF49;
+    font-weight: 600;
+}   
+
+
+/* Main */
+
+.pos{
+    margin: 0;
+    scroll-margin-top: 4.97rem;
+}
+
+.pos .name{
+    background-color: #FCBF49;
+    background-image: linear-gradient(to left,#997a38,#f5bc49);
+    color: black;
+    padding: 0.4rem 0;
+    text-align: center;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    justify-content: center;
+    margin: 1rem;
+    
+}
+
+.content .card{
+    background-color: rgb(0, 153, 255);
+    background-image: radial-gradient(#004a8b,#00060b);
+    border: 2px solid #f5bc49;
+    border-radius: 10%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem;
+}
+
+.content .card img{
+    border-radius: 50%;
+    border: 2px solid #f5bc49;
+    width: 80%;
+}
+
+.content .card p{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/* Media */
+
+@media screen and (max-width: 576px){
+    
+    header{
+        display: block;
+        background-color: black;
+        gap: 0.5rem;
+        padding: 0;
+    }
+    
+    .heading{
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+    
+    .heading img{
+        height: 2rem;
+        margin: 0;
+    }
+    
+    .heading .text h1{
+        font-size: 1rem;
+    }
+    
+    .heading .text h2{
+        font-size: 0.6rem;
+    }
+    nav ul{
+        justify-content: space-evenly;
+        background-color: #FCBF49;
+        background-image: linear-gradient(to left,#997a38,#f5bc49);
+        padding: 0.1rem 0;
+    }
+
+    nav ul li a,nav ul li a:visited{
+        color: black;
+    }
+    
+    nav ul li a:hover,nav ul li a:focus{
+        color: #4d3b18;
+    }
+
+
+
+    .pos{
+        scroll-margin-top: 4.4rem;
+    }
+
+    .pos .name{
+        background-image: none;
+        background-color: black;
+        color: white;
+    }
+
+}
